@@ -1,0 +1,32 @@
+#x2 {
+	position: absolute;
+	top: 0px;
+	left: 300px;
+	width: 150px;
+	border-style: solid;
+	height: 100px;
+	background-color: blue;
+}
+#x3 {
+	position: absolute;
+	top: 0px;
+	left: 150px;
+	width: 150px;
+	border-style: solid;
+	height: 100px;
+	background-color: blue;
+}
+#x4 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 150px;
+	border-style: solid;
+	height: 100px;
+	background-color: blue;
+}
+#container {
+	position: relative;
+	width: 40%;
+	height: 100px;
+}

@@ -1,0 +1,36 @@
+.container {
+	padding: 10px;
+	position: relative;
+	margin: 1px;
+}
+.head {
+	height: 70px;
+	width: 1303px;
+	right: 0;
+	margin: 1px;
+	position: absolute;
+	background-color: #a29bfe;
+	display: inline-block;
+}
+.side-nav {
+	height: 500px;
+	width: 200px;
+	margin: 1px;
+	left: 0;
+	background-color: #6c5ce7;
+	display: inline-block;
+}
+.main {
+	position: absolute;
+	display: inline-block;
+	margin: 1px;
+	width: 100%;
+}
+.inner-content {
+	position: absolute;
+	top: 70px;
+	margin: 1px;
+	height: 430px;
+	width: 1304px;
+	background-color: red;
+}

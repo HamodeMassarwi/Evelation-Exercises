@@ -1,0 +1,10 @@
+#xoxo {
+	background-color: red;
+	width: calc(100%);
+	height: calc(30px);
+}
+#xoxo1 {
+	background-color: blue;
+	width: calc(100% - 20px);
+	height: calc(30px);
+}
