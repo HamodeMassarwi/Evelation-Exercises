@@ -1,26 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Page Title</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+
 </head>
+
 <body>
-    <center>
-        <div class="container" id="container">
-            <label for="FullName">FullName</label>
-            <input id="name" type="text" name="FullName">
-            <label for="desired-salary">Desired Salary</label>
-            <input id="salary" type="number" name="desired-salary" value="0">
-            <label  for="date">Birthday</label>
-            <input id="birth" type="date" name="date">
-            <label for="phone">Phone</label>
-            <input id="phone" type="text" name="phone">
-            <button onclick="check()" >Confirm</button>
+<center>
+    <div id="container">
+        <div id="form">
+            <div class="main">
+                <div>Name</div>
+                <input type="text" placeholder="Enter your name" id="name">
+            </div>
+            <div class="main">
+                <div class="second-line">
+                    <div>Desired Salary</div>
+                    <input type="number" placeholder="Salary" id="desired-salary" class="input">
+                </div>
+                <div class="second-line">
+                    <div>Birthday</div>
+                    <input type="date" id="birthday" class="input">
+                </div>
+            </div>
+            <div class="main">
+                <div>Phone</div>
+                <input type="number" placeholder="Enter phone number" id="phone" class="input">
+            </div>
+            <button id="button" onclick="validate()">Submit</button>
         </div>
+    </div>
     </center>
+
     <script src="main.js"></script>
 </body>
+
 </html>

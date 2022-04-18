@@ -1,26 +1,55 @@
 
-const check = function(){
-    let phone = document.getElementById("phone").value;
-    let fullname = document.getElementById("name").value;
-    let salary = document.getElementById("salary").value;
-    let birth = document.getElementById("birth").value;
-    let alerting = document.createElement("p");
-    alerting.setAttribute("class","alerting");
-    alerting.style.backgroundColor = "red";
-    document.getElementById("container").appendChild(alerting)
-    console.log(fullname)
-    if(fullname.length<2 || fullname == undefined){
-        alerting.innerHTML="Name must be longer than 2 characters"
+const isMissing = function(input) {
+    if(input.length === 0) {
+        return true
+    } else {
+        return false
     }
-    else if(salary<10000 || salary>16000){
-        alerting.innerHTML="Salary must be greater than 10,000 but less than 16,000"
+  }
+  
+  const message = document.createElement("div")
+  message.setAttribute("id", "error-message")
+  
+  const validate = function() {
+  
+    const form = document.getElementById("form")
+    const name = document.getElementById("name").value
+    const salary = parseInt(document.getElementById("desired-salary").value)
+    console.log(salary)
+    const birthday = document.getElementById("birthday").value
+    const phone = document.getElementById("phone").value
+  
+  
+  
+    if(isMissing(name)){
+        message.innerHTML = "Name is missing"
+    } else if(name.length <= 2) {
+            message.innerHTML = "Name is too short, please enter name with more than 2 characters"
+    } else if (isMissing(salary)) {
+        message.innerHTML = "Desired salary is missing"
+    } else if((salary < 10000)) {
+        message.innerHTML = "Salary must be greater than 10000"
+    } else if((salary > 16000)) {
+        message.innerHTML = "Salary must be less than 16000"
+    } else if (isMissing(birthday) || birthday === null) {
+        message.innerHTML = "Please enter your birthday"
+    } else if(isMissing(phone)) {
+        message.innerHTML = "Phone is missing"
+    } else if(phone.length < 10) {
+        message.innerHTML = "Phone number too short, must be 10 digits"
+    } else if(phone.length > 10) {
+        message.innerHTML = "Phone number too long, must be 10 digits"
+    } else {
+        form.style.display = "none"
+        const welcome = document.createElement("h1")
+        welcome.innerHTML = "Welcome in, " + name
+        welcome.style.color = "green"
+        document.body.appendChild(welcome)
     }
-    else if(birth!=null){
-        alerting.innerHTML="Birthday may not be null"
-    }
-    else if(phone.length != 10){
-        alerting.innerHTML="Phone must be 10 digits long"
-    }
-
-
-}
+  
+  
+  
+  
+    document.getElementById("form").appendChild(message)
+  
+  }

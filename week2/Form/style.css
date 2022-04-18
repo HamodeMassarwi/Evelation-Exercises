@@ -1,22 +1,62 @@
-.container {
-	position: relative;
-	background-color: grey;
-	width: 500px;
-	height: 230px;
+body {
+	font-family: helvetica;
 }
 
-label,
-input {
-	display: flex;
-	flex-direction: column;
+#container {
+	position: relative;
+	background-color: #bdc3c7;
+	display: inline-block;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-right: 20px;
+	padding-left: 20px;
+	border: #16a085 solid 4px;
 }
-button {
-	position: absolute;
-	bottom: 0px;
-	left: 210px;
+
+#form {
+	position: relative;
+	width: 350px;
+	height: 300px;
 }
-.alerting {
+
+.main {
+	margin: 12px;
+}
+
+.second-line {
+	display: inline-block;
+}
+
+#error-message {
+	color: red;
 	position: absolute;
-	bottom: 0px;
-	left: 0px;
+}
+
+#name {
+	width: 100%;
+}
+
+#desired-salary {
+	width: 150px;
+}
+
+#birthday {
+	width: 100%;
+}
+
+#phone {
+	width: 100%;
+}
+
+#button {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	background-color: #2c3e50;
+	color: #95a5a6;
+	border: #2c3e50 solid 3px;
+
+	width: 75px;
+	height: 35px;
+	border-radius: 5%;
 }
