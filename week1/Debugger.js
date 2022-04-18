@@ -40,3 +40,4 @@ function koo(d){
 var r = goo(5);//7
 var w = r + too(3) + zoo(r) + boo(r, too(712));//1+1
 var q = foo(r, w, 4) + koo(34) + noo(w,r);
+console.log("x")
