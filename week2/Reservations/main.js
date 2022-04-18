@@ -13,8 +13,4 @@ const reservations = {
     }else{
       document.getElementById("header").innerHTML = "You Have no reservations " + name ;
     }
-
-
-
   }
-  
