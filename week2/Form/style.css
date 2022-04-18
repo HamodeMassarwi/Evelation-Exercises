@@ -1,0 +1,22 @@
+.container {
+	position: relative;
+	background-color: grey;
+	width: 500px;
+	height: 230px;
+}
+
+label,
+input {
+	display: flex;
+	flex-direction: column;
+}
+button {
+	position: absolute;
+	bottom: 0px;
+	left: 210px;
+}
+.alerting {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
