@@ -1,0 +1,1 @@
+const findUser = suite => console.log(users.find(u => u.address.suite === suite).company.name)

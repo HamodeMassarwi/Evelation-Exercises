@@ -1,0 +1,46 @@
+{
+    "animals": [
+        {
+            "name": "cat",
+            "weigh": 10,
+            "unit": "kilograms",
+            "lives": "streets , houses",
+            "endangered": false,
+            "food": "tuna , milk",
+            "predators": [
+                "dog",
+                "wolf",
+                "lion"
+            ],
+            "delicious": null
+        },
+        {
+            "name": "dog",
+            "weigh": 25,
+            "unit": "kilograms",
+            "lives": "streets , houses",
+            "endangered": true,
+            "food": "meat , cats",
+            "predators": [
+                "lion",
+                "cheeatah",
+                "wolf"
+            ],
+            "delicious": null
+        },
+        {
+            "name": "elephant",
+            "weigh": 7,
+            "unit": "tons",
+            "lives": "zoo , safari",
+            "endangered": true,
+            "food": "water , leaves",
+            "predators": [
+                " lions",
+                "hyenas",
+                "crocodiles"
+            ],
+            "delicious": null
+        }
+    ]
+}

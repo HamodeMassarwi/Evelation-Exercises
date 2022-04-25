@@ -1,0 +1,1 @@
+const doesAllLiveSC = users.every(u => u.address.city === "South Christy")
