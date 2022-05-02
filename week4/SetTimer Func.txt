@@ -1,0 +1,3 @@
+setTimeout(() => {
+        $("#hi").text(" You Areee Theee Best ☺ !")
+    }, "3000")
